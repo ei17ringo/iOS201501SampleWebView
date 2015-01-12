@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSURL *myURL = [NSURL URLWithString:@"http://www.apple.com/"];
+    
+    NSURLRequest *myURLReq = [NSURLRequest requestWithURL:myURL];
+    
+    [self.myWebView loadRequest:myURLReq];
+    
 }
 
 - (void)didReceiveMemoryWarning {
